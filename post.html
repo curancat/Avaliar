@@ -554,9 +554,9 @@
                     <p>${escapeHtml(postData.text)}</p>
                     ${mediaHTML}
                     <div class="post-interactions">
-                        <button class="like-btn ${likedByUser ? 'liked' : ''}" data-id="${postId}" aria-pressed="${likedByUser}">👍 <span class="like-count">${likesCount}</span></button>
+                        <button class="like-btn ${likedByUser ? 'liked' : ''}" data-id="${postId}" aria-pressed="${likedByUser}">❤️ <span class="like-count">${likesCount}</span></button>
                         <button class="comment-btn" data-id="${postId}">💬 Comentários</button>
-                        <button class="share-btn" data-id="${postId}">🔗 Compartilhar</button>
+                        <button class="share-btn" data-id="${postId}">🌐 Compartilhar</button>
                     </div>
                 </div>
             `;
@@ -762,7 +762,7 @@
                     <div class="comment-meta"><strong>${escapeHtml(authorName)}</strong> · <span>${created}</span></div>
                     <div class="comment-text">${escapeHtml(comment.text)}</div>
                     <div class="comment-actions">
-                        <button class="small-btn comment-like-btn ${likedByUser ? 'liked' : ''}" data-post="${postId}" data-comment="${comment.id}">👍 <span class="c-like-count">${likes}</span></button>
+                        <button class="small-btn comment-like-btn ${likedByUser ? 'liked' : ''}" data-post="${postId}" data-comment="${comment.id}">❤️ <span class="c-like-count">${likes}</span></button>
                         <button class="small-btn reply-btn" data-comment="${comment.id}">Responder</button>
                         ${comment.authorId === currentUser?.uid ? `<button class="small-btn delete-comment-btn" data-post="${postId}" data-comment="${comment.id}" style="color:var(--danger-color)">Apagar</button>` : ''}
                     </div>
